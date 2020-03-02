@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title ESSEC
+    //- link(rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous")
+    link(rel="stylesheet", href="lib/css-awesome/all.min.css")
+    link(rel="stylesheet", href="lib/css-awesome/brands.css")
+    link(rel="stylesheet" href="lib/glide/glide.core.min.css")
+    link(rel="stylesheet" href="css/style.min.css")
+
+  body
+    include ../modules/header
+    main.home-page
+      section.home-page__features.features
+        include ../modules/features
+    include ../modules/footer
+
+    script(src="js/polyfill.min.js")
+    script(src="js/script.js" defer)
+    

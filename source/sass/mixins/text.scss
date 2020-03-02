@@ -1,0 +1,9 @@
+@mixin text ($size:16px, $line:24px) {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: $font-main;
+  font-size: $size;
+  font-weight: 400;
+  line-height: $line;
+}

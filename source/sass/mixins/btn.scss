@@ -1,0 +1,26 @@
+@mixin btn {
+  display: block;
+  width: 100%;
+  padding: 9px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-main;
+  background-color: $accent-color;
+  color: $white;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,41 @@
+@mixin close-btn {
+  position: relative;
+  width: 32px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 3px;
+    top: 50%;
+    left: 0;
+    background-color: $dark-gray;
+    transform: translate(-50%);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:focus, &:hover {
+    outline: none;
+    &::after, &::before {
+      background-color: $light-gray;
+    }
+  }
+
+  &:active {
+    &::after, &::before {
+      background-color: $white;
+    }
+  }
+}
